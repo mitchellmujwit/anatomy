@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Skeleton(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/newSkel.glb')
+  const { nodes, materials } = useGLTF('/skeleton.glb')
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
